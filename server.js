@@ -79,7 +79,7 @@ const corsOptions = {
     "Authorization",
   ],
   methods: ["GET", "POST", "DELETE", "UPDATE", "PUT", "PATCH"],
-  origin: ["http://localhost:3001", "http://localhost:3002","http://myhotdashboard.lanfiasave.com/","https://myhot-myhot.vercel.app/"],
+  origin: ["http://localhost:3001", "http://localhost:3002","http://myhotdashboard.lanfiasave.com","https://myhot-myhot.vercel.app","https://myhotdashboard.lanfiasave.com","http://myhotdashboard.lanfiasave.com"],
   credentials: true,
   optionsSuccessStatus: 200,
   preflightContinue: true,
