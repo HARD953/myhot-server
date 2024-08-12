@@ -48,7 +48,7 @@ app.use(
     genid: (req) => {
       return uuidv4();
     },
-    secret: "your_secret_key",
+    secret: "123456789ABCDE",
     resave: false,
     saveUninitialized: true,
     cookie: {
