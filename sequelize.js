@@ -10,15 +10,11 @@ export const sequelize = new Sequelize(
     host: config.host,
     port: config.port,
     dialect: config.dialect,
-
-    // dialectOptions: {
-    //   ssl: {
-    //     require: true,
-    //     rejectUnauthorized: false,
-    //   },
-    // },
-    connectTimeout: 60000,
-    logging: console.log
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
   }
 );
-

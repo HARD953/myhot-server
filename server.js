@@ -48,16 +48,17 @@ app.use(
     genid: (req) => {
       return uuidv4();
     },
-    secret: "123456789ABCDE",
+    secret: process.env.SESSION_SECRET || "default_secret",  // Utilisation de SESSION_SECRET
     resave: false,
     saveUninitialized: true,
     cookie: {
-      secure: false,
+      secure: false,  // Assure-toi de définir `true` en production si tu utilises HTTPS
       maxAge: 3600000,
       httpOnly: true,
     },
   })
 );
+
 
 // Définir la route pour servir les images
 app.use("/uploads/images/", express.static(imageDirectory));
