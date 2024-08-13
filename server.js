@@ -52,7 +52,7 @@ app.use(
     resave: false,
     saveUninitialized: true,
     cookie: {
-      secure: false,  // Assure-toi de définir `true` en production si tu utilises HTTPS
+      secure: true,  // Assure-toi de définir `true` en production si tu utilises HTTPS
       maxAge: 3600000,
       httpOnly: true,
     },
